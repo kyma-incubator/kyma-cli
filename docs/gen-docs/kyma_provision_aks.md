@@ -19,7 +19,7 @@ kyma provision aks [flags]
       --attempts uint         Maximum number of attempts to provision the cluster. (default 3)
   -c, --credentials string    Path to the TOML file containing the Azure Subscription ID (SUBSCRIPTION_ID), Tenant ID (TENANT_ID), Client ID (CLIENT_ID) and Client Secret (CLIENT_SECRET). (required)
       --disk-size int         Disk size (in GB) of the cluster. (default 50)
-  -k, --kube-version string   Kubernetes version of the cluster. (default "1.19.7")
+  -k, --kube-version string   Kubernetes version of the cluster. (default "1.19.11")
   -l, --location string       Region (e.g. westeurope) of the cluster. (default "westeurope")
   -n, --name string           Name of the AKS cluster to provision. (required)
       --nodes int             Number of cluster nodes. (default 3)

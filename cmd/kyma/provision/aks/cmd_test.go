@@ -18,7 +18,7 @@ func TestProvisionAKSFlags(t *testing.T) {
 	require.Equal(t, "", o.Name, "Default value for the name flag not as expected.")
 	require.Equal(t, "", o.Project, "Default value for the project flag not as expected.")
 	require.Equal(t, "", o.CredentialsFile, "Default value for the credentials flag not as expected.")
-	require.Equal(t, "1.19.7", o.KubernetesVersion, "Default value for the kube-version flag not as expected.")
+	require.Equal(t, defaultKubernetesVersion, o.KubernetesVersion, "Default value for the kube-version flag not as expected.")
 	require.Equal(t, "westeurope", o.Location, "Default value for the location flag not as expected.")
 	require.Equal(t, "Standard_D4_v3", o.MachineType, "Default value for the type flag not as expected.")
 	require.Equal(t, 50, o.DiskSizeGB, "Default value for the disk-size flag not as expected.")
